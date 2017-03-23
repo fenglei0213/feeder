@@ -21,26 +21,27 @@
         <druid.version>0.2.3</druid.version>
         <slf4j.version>1.6.1</slf4j.version>
         <log4j.version>1.2.16</log4j.version>
-        <commons-lang3.version>3.4</commons-lang3.version>
+        <commons-lang3.version>3.1</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
         <!--<guava.version>13.0.1</guava.version>-->
         <guava.version>12.0.1</guava.version>
         <joda-time.version>2.1</joda-time.version>
-        <vertx-core.version>3.3.2</vertx-core.version>
+        <vertx.version>3.3.2</vertx.version>
+        <commons-lang3.version>3.4</commons-lang3.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!--feeder-->
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-core</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <!--tieba.fusion.api-begin-->
             <dependency>
                 <groupId>org.wind3stone</groupId>
                 <artifactId>feeder-conf</artifactId>
                 <version>${feeder.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.vertx</groupId>
-                <artifactId>vertx-core</artifactId>
-                <version>${vertx-core.version}</version>
             </dependency>
             <!-- logging begin -->
             <dependency>
@@ -67,7 +68,6 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
-
             <!-- spring -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -96,6 +96,11 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
@@ -104,6 +109,13 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+
+            <!-- json -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
             <!-- joda -->
             <dependency>

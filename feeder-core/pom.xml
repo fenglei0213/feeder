@@ -15,14 +15,14 @@
     <name>feeder-core</name>
     <packaging>jar</packaging>
     <dependencies>
-        <!--feeder-->
-        <dependency>
-            <groupId>org.wind3stone</groupId>
-            <artifactId>feeder-conf</artifactId>
-        </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
+        </dependency>
+        <!--tieba.fusion.api-begin-->
+        <dependency>
+            <groupId>org.wind3stone</groupId>
+            <artifactId>feeder-conf</artifactId>
         </dependency>
         <!-- logging begin -->
         <dependency>
@@ -45,7 +45,6 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-
         <!-- spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -69,13 +68,22 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.4</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
+        </dependency>
+
+        <!-- json -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
         </dependency>
         <!-- joda -->
         <dependency>
