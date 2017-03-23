@@ -28,6 +28,8 @@
         <joda-time.version>2.1</joda-time.version>
         <vertx.version>3.3.2</vertx.version>
         <commons-lang3.version>3.4</commons-lang3.version>
+        <junit.version>4.12</junit.version>
+        <joda-time.version>2.1</joda-time.version>
     </properties>
 
     <dependencyManagement>
@@ -96,11 +98,6 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>org.yaml</groupId>
-                <artifactId>snakeyaml</artifactId>
-                <version>${snakeyaml.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
@@ -110,18 +107,11 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
-
-            <!-- json -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
-            </dependency>
             <!-- joda -->
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
-                <version>${joda.version}</version>
+                <version>${joda-time.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>

@@ -15,7 +15,7 @@
 
     <description>spring common</description>
 
-    <!-- SpringContextHolder -->
-    <bean id="springContextHolder" class="com.baidu.tieba.fusion.utils.SpringContextHolder" lazy-init="false"/>
-
+    <bean id="mysqlProxyServerVerticle" class="org.wind3stone.feeder.MysqlProxyServerVerticle">
+        <property name="mysqlIp" value="${feeder.ip}"/>
+    </bean>
 </beans>
